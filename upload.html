@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Upload Your Item</h1>
+        <form id="uploadForm">
+            <label for="name">Item Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="picture">Item Picture (Upload File):</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Textbooks">Textbooks</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Supplies">Supplies</option>
+                <option value="Tutoring">Tutoring</option>
+                <option value="Clothing">Clothing</option>
+               
+            </select>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="owner">Owner:</label>
+            <input type="text" id="owner" name="owner" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            
+
+            <button type="submit">Upload Item</button>
+        </form>
+    </div>
+
+    
+
+    <script src="upload.js"></script> <!-- External JavaScript file -->
+</body>
+</html>
